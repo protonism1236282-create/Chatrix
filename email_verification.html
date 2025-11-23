@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Email Verification - Chatrix</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #2980b9, #6dd5fa, #ffffff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #202124;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      width: 320px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .icon {
+      color: #2980b9;
+      font-size: 90px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-weight: 700;
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 28px;
+      line-height: 1.4;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #2980b9;
+      color: white;
+      font-weight: 700;
+      padding: 14px 48px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 12px rgba(41, 128, 185, 0.4);
+    }
+
+    a.button:hover {
+      background-color: #1c5a83;
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 12px;
+      color: #888888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="title" aria-describedby="description">
+    <div class="icon" aria-hidden="true">&#9993;</div>
+    <h1 id="title">Email Verified Successfully!</h1>
+    <p id="description">
+      Thank you for verifying your email address.
+      You can now return to the <strong>Chatrix</strong> app and start using all features.
+    </p>
+    <a href="chatrix://login" class="button">Open App</a>
+    <footer>
+      &copy; 2024 Chatrix. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
